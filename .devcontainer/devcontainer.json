@@ -3,7 +3,7 @@
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
-	"forwardPorts": [3307, 8080],  // Actualizado a 3307
+	"forwardPorts": [3308, 8080],  // Actualizado a 3308
 	"settings": {
 	  "java.configuration.updateBuildConfiguration": "automatic"
 	},
