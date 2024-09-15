@@ -1,7 +1,19 @@
 {
-	"name": "Java & PostgreSQL",
+	"name": "Java & MySQL",
 	"dockerComposeFile": "docker-compose.yml",
 	"service": "app",
-	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}"
-	
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"forwardPorts": [3307, 8080],  // Actualizado a 3307
+	"settings": {
+	  "java.configuration.updateBuildConfiguration": "automatic"
+	},
+	"extensions": [
+	  "vscjava.vscode-java-pack",
+	  "redhat.vscode-xml",
+	  "ms-azuretools.vscode-docker"
+	],
+	"postCreateCommand": "mvn clean install",
+	"remoteUser": "vscode"
   }
+  
+  
